@@ -5,7 +5,7 @@ Documentation has too many jargons. You should follow this path that I have list
 1. Read the Zen of Python
 On the python interpreter do the following:
 ```python
->>> import this`
+>>> import this
 ```
 
 > The Zen of Python, by Tim Peters
