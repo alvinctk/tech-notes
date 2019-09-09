@@ -32,8 +32,7 @@ Namespaces are one honking great idea – let’s do more of those!
 
 2. Watch the lecture on "Transforming Code into Beautiful Idiomatic Python" by Raymond Hettinger.
 
-My notes on [Transforming Code into Beautiful Idiomatic Python ](https://nbviewer.jupyter.org/github/alvinctk/Python-Talks/blob/master/Transforming-Code-into-Beautiful-Idiomatic-Python/Transforming%20Code%20into%20Beautiful%20Idiomatic%20Python.ipynb)
-Common examples on transforming code into idiomatic Python.
+- My notes on [Transforming Code into Beautiful Idiomatic Python ](https://nbviewer.jupyter.org/github/alvinctk/Python-Talks/blob/master/Transforming-Code-into-Beautiful-Idiomatic-Python/Transforming%20Code%20into%20Beautiful%20Idiomatic%20Python.ipynb). Common examples on transforming code into idiomatic Python.
 
 3. Read [Google Python Style Guide](http://google.github.io/styleguide/pyguide.html). Great with examples on what not to do (cons or bad) and what to do (pros or good). 
 
