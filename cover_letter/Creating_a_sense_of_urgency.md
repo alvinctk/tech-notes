@@ -1,5 +1,8 @@
-## Creating a sense of urgency 
+# Creating a sense of urgency in cover letter
+- Lecture by Professor Charles Duquette. 
+- Notes by Alvin Chia
 
+## A sense of your limited availability
 In this lesson, you'll learn strategies for creating a sense of urgency in the hiring manager. You want the hiring manager to feel like he or she needs to take action immediately, to contact you now before you get away.
 
 Remember, that in the hiring game, hiring managers are the customer, and you, or your services, are the product. Like with any other product, if you have limited availability, you are perceived as more desirable.
@@ -30,13 +33,15 @@ Businesses use this language because it works.
 
 Remember, your services are the product, the employer is the customer. Use the powerful principles of marketing that businesses have been using on all of us for decades.
 
-There is one four-letter word that has been found to powerfully impact the effectiveness of an advertisement. It's the word, call.
+## Use a four letter word to get your way
+
+There is one four-letter word that has been found to powerfully impact the effectiveness of an advertisement. It's the word, **call**.
 
 Split AB tests have repeatedly shown that placing the word, call, in front of a telephone number increases an ad's response.
 
 The word, call, demands an action. This one word tells anyone who reads the ad, and has any interest and desire whatsoever in the product, exactly what action to take. Even though a telephone number would seem to be enough, including the word, call, somehow adds motivation, for whatever reason, the word is known to boost responses. So use it.
 
-** Cover letter death by cliche**
+## Cover letter death by cliche
 
 You do not want to use trite phrases such as this. This sounds like begging, or the variation, please call me anytime, which sounds desperate. No one should be this available.
 
@@ -73,7 +78,7 @@ This says, after all this matter's not important, if you have free time during y
 A direct, simple, straightforward call to action. Combine it with a limited availability line, and you have a great close.
 
 
-**Limited Availability**
+## Limited Availability
 
 Employers are people. They perceive more value in a job candidate who is employed or who has limited availability. Whether you're employed or not, you must demonstrate limited availability to create value in the mind of the hiring manager
 
