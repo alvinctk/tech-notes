@@ -20,14 +20,6 @@ Always press <kbd>Esc</kbd> to enter <kbd>Normal</kbd> (or Command) mode before 
 commands.
 
 ## How to read/use command instruction from this note
-Press <kbd>Key</kbd> together when <kbd>Key</kbd> are connected with `-`.
-
-- <kbd>ctrl</kbd>-<kbd>w</kbd>-<kbd>k</kbd>
-
-
-Press <kbd>Key</kbd> separately when <kbd>Key</kbd> are connected with or without `+`.
-- <kbd>10</kbd> + <kbd>G</kbd> can be type `:10G` <kbd>Enter</kbd>
-- <kbd>Esc</kbd><kbd>g</kbd><kbd>g</kbd>  can be type `:gg` + <kbd>Enter</kbd>
 
 Whenever `:text<CR>` or `:text`
 1. Press <kbd>Esc</kbd> to enter <kbd>Normal</kbd> (or Command) mode.
@@ -39,6 +31,15 @@ Whenever `:text<CR>` or `:text`
 4. `<CR>` = Press <kbd>Enter</kbd>
 > <kbd>Enter</kbd> is needed to execute the command indicated after `:` and
 > before <kbd>Enter</kbd> or `<CR>`
+
+Press <kbd>Key</kbd> together when <kbd>Key</kbd> are connected with `-`.
+
+- <kbd>ctrl</kbd>-<kbd>w</kbd>-<kbd>k</kbd>
+
+
+Press <kbd>Key</kbd> separately when <kbd>Key</kbd> are connected with or without `+`.
+- <kbd>10</kbd> + <kbd>G</kbd> can be type `:10G` <kbd>Enter</kbd>
+- <kbd>Esc</kbd><kbd>g</kbd><kbd>g</kbd>  can be <kbd>Esc</kbd>, then type `:gg` + <kbd>Enter</kbd>
 
 
 ## Modes in Vi or Vim 
