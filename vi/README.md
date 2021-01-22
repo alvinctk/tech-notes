@@ -41,7 +41,7 @@ Modes in Vi or Vim
 - Visual = To select rows and columns = <kbd>Visual</kbd> mode = <kbd>Esc</kbd><kbd>v</kbd>
 
 - Visual Block = To select block of columns = <kbd>V-Block</kbd> mode  =
-  <kbd>Esc</kbd><kbd>ctrl</kbd>-<kbd><kbd>v</kbd>
+  <kbd>Esc</kbd><kbd>ctrl</kbd>-<kbd>v</kbd>
   > Keys are pressed together
 
 > <kbd>Normal</kbd>, <kbd>Insert</kbd>, <kbd>Visual</kbd>, <kbd>V-Block</kbd> are not keys but to present `vi` modes in the editor 
