@@ -18,6 +18,7 @@ Press <kbd>Key</kbd> together when <kbd>Key</kbd> are connected with `-`.
 
 Press <kbd>Key</kbd> separately when <kbd>Key</kbd> are connected with or without `+`.
 - <kbd>10</kbd> + <kbd>G</kbd> can be type `:10G<CR>`
+- <kbd>Esc</kbd><kbd>g</kbd><kbd>g</kbd>  can be type `:gg` + <kbd>Enter</kbd>
 
 Whenever `:text<CR>` or `:text`
 1. Press <kbd>Esc</kbd> to enter <kbd>Normal</kbd> (or Command) mode.
@@ -32,7 +33,10 @@ Whenever `:text<CR>` or `:text`
 ## Modes in Vi or Vim 
 Modes in Vi or Vim 
 - Command mode = <kbd>Normal</kbd> mode = <kbd>Esc</kbd>
+
 - Typing  = To insert character to file  = <kbd>Insert</kbd> mode = <kbd>Esc</kbd> + <kbd>i</kbd>
+
+> <kbd>Normal</kbd> and <kbd>Insert</kbd> are not keys but to present modes. 
 
 ## Workflow of Editing a file
 
@@ -149,7 +153,7 @@ Type `:sp ` followed by a file name.
 Go to window above = <kbd>ctrl</kbd> + <kbd><w</kbd> + <kbd>k</kbd> (Press all
 keys at the same time)
 
-Go to window below = <kbd>ctrl</kbd> + <kbd><w<kbd> + <kbd>k</kbd>
+Go to window below = <kbd>ctrl</kbd> + <kbd><w</kbd> + <kbd>k</kbd>
 
 
 
