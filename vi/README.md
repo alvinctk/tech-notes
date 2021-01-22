@@ -6,6 +6,104 @@ Any instruction does not explicitly <kbd>Esc</kbd> does includes
 Always press <kbd>Esc</kbd> to enter <kbd>Normal</kbd> (or Command) mode before any
 commands.
 
+## Modes in Vi or Vim 
+Modes in Vi or Vim 
+- Command mode = <kbd>Normal</kbd> mode = <kbd>Esc</kbd>
+- Typing  = To insert character to file  = <kbd>Insert</kbd> mode = <kbd>Esc</kbd> + <kbd>i</kbd>
+
+
+Press <kbd>Key</kbd> together when <kbd>Key</kbd> are connected with `-`.
+
+- <kbd>ctrl</kbd>-<kbd>w</kbd>-<kbd>k</kbd>
+
+
+Press <kbd>Key</kbd> separately when <kbd>Key</kbd> are connected with `+`.
+- <kbd>10</kbd> + <kbd>G</kbd> can be type `:10G<CR>`
+
+Whenever `:text<CR>`
+1. Press <kbd>Esc</kbd> to enter <kbd>Normal</kbd> (or Command) mode.
+
+2. Type `:`
+
+3. Type whicheverr command `text` in placeholder shown in instruction. 
+
+4. `<CR>` = Press <kbd>Enter</kbd>
+
+
+## Navigation
+Go up = <kbd>k</kbd> 
+
+Go down = <kbd>j</kbd>
+
+Go left = <kbd>h</kbd>
+
+Go right = <kbd>l</kbd> 
+
+Go right a word = <kbd>w</kbd> 
+
+Go left a word = <kbd>b</kbd>
+
+Go to beginning of file = <kbd>gg</kbd>
+
+Go to end of file = <kbd>shift</kbd> + <kbd>g</kbd>
+
+Go to beginning of non-whitespace part of line  = <kbd>^</kbd>
+
+Go right 5 words = <kbd>5</kbd> + <kbd>w</kbd>
+
+Go right to nearest "z" character = <kbd>f</kbd> + <kbd>z</kbd>
+
+Go left to nearest "z" character = <kbd>F</kbd> + <kbd>z</kbd>
+
+
+
+## Search and Replace
+
+Search "text" = <kbd>/</kbd> + `text`(type the text you want to search) + <kbd>Enter</kbd>
+- Find next <kbd>n</kbd>
+- Find previous <kbd>N</kbd> or <kbd>shift</kbd> + <kbd>n</kbd>
+
+Turn off hightling (after a search) = `:noh`
+
+Find next instant of a word that your cursor is over = <kbd>\*</kbd>
+
+Search and replace from current line to end of file = `:,$s/search/replace/gc`
+> `,$` = current line to `$` end of file
+> `search` = Replace `search` with the text to search
+> `replace` = Replace `replace` with the text to be replace with
+
+## Undo a Command
+
+Undo = <kbd>u</kbd>
+Redo = <kbd>ctrl</kbd> + <kbd>r</kbd>
+
+## View Directory and File Explorer 
+
+Type `:S` (**S** is uppercase s)
+> This will split the window and open up a file explorer. Use the key to select
+> directories or to open file
+
+
+## Split Window Editing
+
+Type `:sp ` followed by a file name.
+
+Go to window above = <kbd>ctrl</kbd> + <kbd><w</kbd> + <kbd>k</kbd> (Press all
+keys at the same time)
+
+Go to window below = <kbd>ctrl</kbd> + <kbd><w<kbd> + <kbd>k</kbd>
+
+
+
+
+
+## Shell (Exit temporary to a shell)
+
+Type `:sh` 
+
+To come back to VIM from the shell type `exit`. 
+
+
 ## Relative number lines 
 
 Put the following in your `~/.vimrc`:
@@ -24,6 +122,18 @@ First, press <kbd>Esc</kbd> to enter <kbd>Normal</kbd> mode.
 ```
 > where `<CR>` is <kbd>Enter</kbd>
 
+
+Operations based on relative line numbers:
+
+- Move 4 lines above current line = <kbd>4</kbd> + <kbd>k<kbd>
+
+- Move 10 lines below current line = <kbd>10</kbd> + <kbd>j</kbd>
+
+- Indent current line and 2 lines below = <kbd>></kbd> + </kbd>2</kbd> + <kbd>j</kbd>
+
+You still can use absolute number to move:
+
+- Move to 899th line = <kbd>899</kbd> + <kbd>G</kbd> or `:899<CR>` 
 
 ## How to insert text
 
