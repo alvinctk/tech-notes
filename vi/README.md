@@ -71,6 +71,31 @@ Modes in Vi or Vim
 
 > <kbd>Visual</kbd>, <kbd>V-Block</kbd>, and <kbd>V-Line</kbd> are types of <kbd>Visual</kbd> modes.
 
+## Basic Commands
+
+> All of these basic commands starts in <kbd>Normal</kbd> mode. 
+
+> Press <kbd>Esc</kbd> first to enter in <kbd>Normal</kbd> mode.
+
+### Insert text
+
+> These commands transition from <kbd>Normal</kbd> mode to <kbd>Insert</kbd>
+
+- <kbd>a</kbd> = Append text following current cursor position
+
+- <kbd>A</kbd> = Append text to the end of current line
+
+- <kbd>i</kbd> = Insert text before the current cursor position
+
+- <kbd>I</kbd> = Insert text at the beginning of the cursor line
+
+- <kbd>o</kbd> = Open a new line following the current line and insert text
+
+- <kbd>O</kbd> = Open a new line above the current line and insert text
+
+
+
+
 > Vi starts the editor in <kbd>Normal</kbd> mode.
 
 ## Workflow of Editing a file
@@ -97,24 +122,6 @@ Modes in Vi or Vim
 > `w` = write
 > `q` = quit (Exit) 
 
-
-## How to insert text
-
-Insert text 
-> The following commands transition from <kbd>Normal</kbd> mode to
-> <kbd>Insert</kbd> mode 
-
-- <kbd>a</kbd> = Append text following current cursor position
-
-- <kbd>A</kbd> = Append text to the end of current line
-
-- <kbd>i</kbd> = Insert text before the current cursor position
-
-- <kbd>I</kbd> = Insert text at the beginning of the cursor line
-
-- <kbd>o</kbd> = Open a new line following the current line and insert text
-
-- <kbd>O</kbd> = Open a new line above the current line and insert text
 
 
 
