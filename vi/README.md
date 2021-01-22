@@ -17,7 +17,7 @@ Press <kbd>Key</kbd> together when <kbd>Key</kbd> are connected with `-`.
 
 
 Press <kbd>Key</kbd> separately when <kbd>Key</kbd> are connected with or without `+`.
-- <kbd>10</kbd> + <kbd>G</kbd> can be type `:10G<CR>`
+- <kbd>10</kbd> + <kbd>G</kbd> can be type `:10G` <kbd>Enter</kbd>
 - <kbd>Esc</kbd><kbd>g</kbd><kbd>g</kbd>  can be type `:gg` + <kbd>Enter</kbd>
 
 Whenever `:text<CR>` or `:text`
@@ -28,6 +28,8 @@ Whenever `:text<CR>` or `:text`
 3. Type whicheverr command `text` in placeholder shown in instruction. 
 
 4. `<CR>` = Press <kbd>Enter</kbd>
+> <kbd>Enter</kbd> is needed to execute the command indicated after `:` and
+> before <kbd>Enter</kbd> or `<CR>`
 
 
 ## Modes in Vi or Vim 
