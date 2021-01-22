@@ -2,6 +2,15 @@
 
 Vi or Vim is an text editor. 
 
+By default, Vi starts in <kbd>Normal</kbd> mode. <kbd>Normal</kbd> mode can be
+accessed by pressing <kbd>Esc</kbd>. 
+
+Whenever in doubt, press <kbd>Esc</kbd>. Always press <kbd>Esc</kbd>.
+
+If you accidentally open a file in Vi, press <kbd>Esc</kbd> -> type `:q!` -> <kbd>Enter</kbd>.
+
+Enjoy the Vi editor command notes below. 
+
 ## Always press <kbd>Esc</kbd>
 
 Any instruction does not explicitly <kbd>Esc</kbd> does includes
@@ -314,4 +323,10 @@ Paste uses <kbd>p</kbd> operation
 > The letter `O` or `o` from the word Orange. Not to be confused with zero 0. 
 
 
+## References 
 
+- [Things About Vim I Wish I Knew Earlier](https://blog.petrzemek.net/2016/04/06/things-about-vim-i-wish-i-knew-earlier/)
+
+- [Simple VIM Reference](https://simpletutorials.com/c/vim/uldvdk5l/simple-vim-reference)
+
+- [Vim Editor Commands](https://simpletutorials.com/c/vim/uldvdk5l/simple-vim-reference)
