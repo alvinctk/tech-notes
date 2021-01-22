@@ -16,9 +16,9 @@ Copy uses <kbd>y</kbd> (yank) operation.
 
 In <kbd>Normal</kbd> mode, copy or yank = <kbd>y</kbd> + <kbd>Any motion</kbd>
 
-Always enter <kbd>Normal</kbd> mode first = Press <kbd>Esc</kbd>
-
 `\n` = newline character at the end
+
+- Always enter <kbd>Normal</kbd> mode first = Press <kbd>Esc</kbd>
 
 - Yank the current word (excludes surrounding space) = <kbd>y</kbd> + <kbd>i</kbd> + <kbd>w</kbd>
 - Yank the current word (includes surrounding space) = <kbd>y</kbd> + <kbd>a</kbd> + <kbd>w</kbd>
@@ -27,18 +27,17 @@ Always enter <kbd>Normal</kbd> mode first = Press <kbd>Esc</kbd>
 - Yank the current cursor until character `x`  = <kbd>y</kbd> + <kbd>f</kbd> + <kbd>x</kbd>
 
 
-- Yank current line including `\n` - <kbd>Esc</kbd> + <kbd>y</kbd> + <kbd>y</kbd> or 
+- Yank current line including `\n` - <kbd>y</kbd> + <kbd>y</kbd> or 
 
-- Yank from current cusor to end of line = <kbd>Esc</kbd> + <kbd>y</kbd> + <kbd>$</kbd>
+- Yank from current cusor to end of line = <kbd>y</kbd> + <kbd>$</kbd>
 
-- Yank n lines including current line = <kbd>Esc</kbd> + <kbd>n</kbd> + <kbd>y</kbd> + <kbd>y</kbd>
-- Yank 3 lines including current line = <kbd>Esc</kbd> + <kbd>3</kbd> + <kbd>y</kbd> + <kbd>y</kbd>
+- Yank n lines including current line = <kbd>n</kbd> + <kbd>y</kbd> + <kbd>y</kbd>
+> Yank 3 lines including current line = <kbd>3</kbd> + <kbd>y</kbd> + <kbd>y</kbd>
 
-- Yank from current line to end of file = <kbd>Esc</kbd> + <kbd>y</kbd> + <kbd>G</kbd>
+- Yank from current line to end of file = <kbd>y</kbd> + <kbd>G</kbd>
 
-- Yank current line to nth current line = <kbd>Esc</kbd> + <kbd>y</kbd> + <kbd>n</kbd> + <kbd>G</kbd>
-
-- Yank current line to 6th current line = <kbd>Esc</kbd> + <kbd>y</kbd> + <kbd>6</kbd> + <kbd>G</kbd>
+- Yank current line to nth current line = <kbd>y</kbd> + <kbd>n</kbd> + <kbd>G</kbd>
+> Yank current line to 6th current line = <kbd>y</kbd> + <kbd>6</kbd> + <kbd>G</kbd>
 
 ## How to paste
 
