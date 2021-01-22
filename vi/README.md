@@ -139,6 +139,7 @@ Search and replace from current line to end of file = `:,$s/search/replace/gc`
 ## Undo a Command
 
 Undo = <kbd>u</kbd>
+
 Redo = <kbd>ctrl</kbd> + <kbd>r</kbd>
 
 ## View Directory and File Explorer 
