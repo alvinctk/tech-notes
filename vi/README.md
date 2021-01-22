@@ -223,32 +223,37 @@ You still can use absolute number to move:
 
 ## How to copy 
 
-Copy uses <kbd>y</kbd> (yank) operation.
+In `Vi`, yank is copy. 
 
-In <kbd>Normal</kbd> mode, copy or yank = <kbd>y</kbd> + <kbd>Any motion</kbd>
+Yank (or copy) operation must be in <kbd>Normal</kbd> mode. 
+
+Yank is presented by command `y` or <kbd>y</kbd>
+
+In <kbd>Normal</kbd> mode, yank = <kbd>y</kbd> + <kbd>Any motion</kbd>
 
 `\n` = newline character at the end
 
-- Always enter <kbd>Normal</kbd> mode first = Press <kbd>Esc</kbd>
+Always enter <kbd>Normal</kbd> mode first = Press <kbd>Esc</kbd>
 
-- Yank the current word (excludes surrounding space) = <kbd>y</kbd> + <kbd>i</kbd> + <kbd>w</kbd>
-- Yank the current word (includes surrounding space) = <kbd>y</kbd> + <kbd>a</kbd> + <kbd>w</kbd>
+Yank (or copy) current word 
+- (excludes surrounding space) = <kbd>y</kbd> + <kbd>i</kbd> + <kbd>w</kbd>
+- (includes surrounding space) = <kbd>y</kbd> + <kbd>a</kbd> + <kbd>w</kbd>
 
-- Yank the current curssor until before character `x` = <kbd>y</kbd> + <kbd>t</kbd> + <kbd>x</kbd>
-- Yank the current cursor until character `x`  = <kbd>y</kbd> + <kbd>f</kbd> + <kbd>x</kbd>
+Yank (or copy) current cursor 
+- until before character `x` = <kbd>y</kbd> + <kbd>t</kbd> + <kbd>x</kbd>
 
+Yank (or copy) lines
+- current line including `\n` - <kbd>y</kbd> + <kbd>y</kbd>
 
-- Yank current line including `\n` - <kbd>y</kbd> + <kbd>y</kbd> or 
+- current cusor to end of line = <kbd>y</kbd> + <kbd>$</kbd>
 
-- Yank from current cusor to end of line = <kbd>y</kbd> + <kbd>$</kbd>
+- n lines including current line = <kbd>n</kbd> + <kbd>y</kbd> + <kbd>y</kbd>
+    - 3 lines including current line = <kbd>3</kbd> + <kbd>y</kbd> + <kbd>y</kbd>
 
-- Yank n lines including current line = <kbd>n</kbd> + <kbd>y</kbd> + <kbd>y</kbd>
-> Yank 3 lines including current line = <kbd>3</kbd> + <kbd>y</kbd> + <kbd>y</kbd>
+- current line to end of file = <kbd>y</kbd> + <kbd>G</kbd>
 
-- Yank from current line to end of file = <kbd>y</kbd> + <kbd>G</kbd>
-
-- Yank current line to nth current line = <kbd>y</kbd> + <kbd>n</kbd> + <kbd>G</kbd>
-> Yank current line to 6th current line = <kbd>y</kbd> + <kbd>6</kbd> + <kbd>G</kbd>
+- current line to nth current line = <kbd>y</kbd> + <kbd>n</kbd> + <kbd>G</kbd>
+    - current line to 6th current line = <kbd>y</kbd> + <kbd>6</kbd> + <kbd>G</kbd>
 
 ## How to paste
 
