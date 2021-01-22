@@ -36,7 +36,7 @@ commands.
 
 - Move to end of current line = <kbd>A</kbd> (or <kbd>shift</kbd> + <kbd>a</kbd>)
 
-- Move to end of last line in file = <kbd>A</kbd> (or <kbd>shift</kbd> + <kbd>a</kbd>)
+- Move to end of last line in file = <kbd>G</kbd> (or <kbd>shift</kbd> + <kbd>g</kbd>)
 
 ## How to insert an opening line below or after current line in vim?
 
