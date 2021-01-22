@@ -98,6 +98,27 @@ Modes in Vi or Vim
 > `q` = quit (Exit) 
 
 
+## Basic commands 
+
+<kbd>Insert</kbd> mode  = <kbd>Esc</kbd> + <kbd>i</kbd>
+
+    <kbd>a</kbd> = Append text following current cursor position
+
+    <kbd>A</kbd> = Append text to the end of current line
+
+    <kbd>i</kbd> = Insert text before the current cursor position
+
+    <kbd>I</kbd> = Insert text at the beginning of the cursor line
+
+    <kbd>o</kbd> = Open a new line following the current line and insert text
+
+    <kbd>O</kbd> = Open a new line above the current line and insert text
+
+<kbd>Normal</kbd> mode = <kbd>Esc</kbd>
+    
+
+
+
 ## File Manipulation Commands
 
 - Write (Save) file =  `:w`
@@ -245,25 +266,6 @@ Operations based on relative line numbers:
 You still can use absolute number to move:
 
 - Move to 899th line = <kbd>899</kbd> + <kbd>G</kbd> or `:899<CR>` 
-
-## How to insert text
-
-<kbd>Insert</kbd> mode  = <kbd>Esc</kbd> + <kbd>i</kbd>
-
-## Text Entry Command
-
-<kbd>a</kbd> = Append text following current cursor position
-
-<kbd>A</kbd> = Append text to the end of current line
-
-<kbd>i</kbd> = Insert text before the current cursor position
-
-<kbd>I</kbd> = Insert text at the beginning of the cursor line
-
-<kbd>o</kbd> = Open a new line following the current line and insert text
-
-<kbd>O</kbd> = Open a new line above the current line and insert text
-
 
 ## How to copy 
 
