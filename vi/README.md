@@ -45,15 +45,17 @@ Whenever `:text<CR>` or `:text`
 Modes in Vi or Vim 
 - Command mode = <kbd>Normal</kbd> mode = <kbd>Esc</kbd>
 
-- Typing  = To insert character to file  = <kbd>Insert</kbd> mode = <kbd>Esc</kbd><kbd>i</kbd>
+- <kbd>Insert</kbd> mode = To insert text to file = <kbd>Esc</kbd><kbd>i</kbd>
 
-- Visual = To select rows and columns = <kbd>Visual</kbd> mode = <kbd>Esc</kbd><kbd>v</kbd>
+- <kbd>Visual</kbd> mode = Selection of text by row or line = <kbd>Esc</kbd><kbd>v</kbd>
 
-- Visual Block = To select block of columns = <kbd>V-Block</kbd> mode  =
-  <kbd>Esc</kbd><kbd>ctrl</kbd>-<kbd>v</kbd>
-  > Keys are pressed together
+- <kbd>V-Block</kbd> mode = Selection of text by columns or rectangular regions = <kbd>Esc</kbd><kbd>ctrl</kbd>+<kbd>v</kbd>
 
-> <kbd>Normal</kbd>, <kbd>Insert</kbd>, <kbd>Visual</kbd>, <kbd>V-Block</kbd> are not keys but to present `vi` modes in the editor 
+- <kbd>V-Line></kbd> mode = Selection of full row or line = <kbd>Esc</kbd><kbd>shift</kbd>+<kbd>v</kbd>
+
+> <kbd>Normal</kbd>, <kbd>Insert</kbd>, <kbd>Visual</kbd>, <kbd>V-Block</kbd>, and <kbd>V-Line</kbd> are not keys but to present `vi` modes in the editor
+
+> <kbd>Visual</kbd>, <kbd>V-Block</kbd>, and <kbd>V-Line</kbd> are types of <kbd>Visual</kbd> modes.
 
 ## Workflow of Editing a file
 
@@ -109,30 +111,42 @@ Modes in Vi or Vim
 
 
 
-## Navigation
-Go up = <kbd>k</kbd> 
+## Movements
 
-Go down = <kbd>j</kbd>
+Movements are in <kbd>Normal</kbd> mode.
 
-Go left = <kbd>h</kbd>
+Always press <kbd>Esc</kbd> first.
 
-Go right = <kbd>l</kbd> 
+### Move cursor
 
-Go right a word = <kbd>w</kbd> 
+up = <kbd>k</kbd> 
 
-Go left a word = <kbd>b</kbd>
+down = <kbd>j</kbd>
 
-Go to beginning of file = <kbd>gg</kbd>
+left = <kbd>h</kbd>
 
-Go to end of file = <kbd>shift</kbd> + <kbd>g</kbd>
+right = <kbd>l</kbd> 
 
-Go to beginning of non-whitespace part of line  = <kbd>^</kbd>
+### Move cursor by word
 
-Go right 5 words = <kbd>5</kbd> + <kbd>w</kbd>
+end of word = <kbd>e</kbd>
 
-Go right to nearest "z" character = <kbd>f</kbd> + <kbd>z</kbd>
+right a word = <kbd>w</kbd> 
 
-Go left to nearest "z" character = <kbd>F</kbd> + <kbd>z</kbd>
+left a word = <kbd>b</kbd>
+
+right 5 words = <kbd>5</kbd> + <kbd>w</kbd>
+
+right to nearest "z" character = <kbd>f</kbd> + <kbd>z</kbd>
+
+left to nearest "z" character = <kbd>F</kbd> + <kbd>z</kbd>
+
+### Move to specific file location
+beginning of file = <kbd>gg</kbd>
+
+end of file = <kbd>shift</kbd> + <kbd>g</kbd>
+
+beginning of non-whitespace part of line  = <kbd>^</kbd>
 
 
 
