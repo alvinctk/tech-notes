@@ -236,24 +236,24 @@ In <kbd>Normal</kbd> mode, yank = <kbd>y</kbd> + <kbd>Any motion</kbd>
 Always enter <kbd>Normal</kbd> mode first = Press <kbd>Esc</kbd>
 
 Yank (or copy) current word 
-- (excludes surrounding space) = <kbd>y</kbd> + <kbd>i</kbd> + <kbd>w</kbd>
-- (includes surrounding space) = <kbd>y</kbd> + <kbd>a</kbd> + <kbd>w</kbd>
+- (excludes surrounding space) = <kbd>y</kbd><kbd>i</kbd><kbd>w</kbd>
+- (includes surrounding space) = <kbd>y</kbd><kbd>a</kbd><kbd>w</kbd>
 
 Yank (or copy) current cursor 
-- until before character `x` = <kbd>y</kbd> + <kbd>t</kbd> + <kbd>x</kbd>
+- until before character `x` = <kbd>y</kbd><kbd>t</kbd><kbd>x</kbd>
 
 Yank (or copy) lines
-- current line including `\n` - <kbd>y</kbd> + <kbd>y</kbd>
+- current line including `\n` - <kbd>y</kbd><kbd>y</kbd>
 
-- current cusor to end of line = <kbd>y</kbd> + <kbd>$</kbd>
+- current cusor to end of line = <kbd>y</kbd><kbd>$</kbd>
 
-- n lines including current line = <kbd>n</kbd> + <kbd>y</kbd> + <kbd>y</kbd>
-    - 3 lines including current line = <kbd>3</kbd> + <kbd>y</kbd> + <kbd>y</kbd>
+- n lines including current line = <kbd>n</kbd><kbd>y</kbd><kbd>y</kbd>
+    - 3 lines including current line = <kbd>3</kbd><kbd>y</kbd><kbd>y</kbd>
 
-- current line to end of file = <kbd>y</kbd> + <kbd>G</kbd>
+- current line to end of file = <kbd>y</kbd><kbd>G</kbd>
 
-- current line to nth current line = <kbd>y</kbd> + <kbd>n</kbd> + <kbd>G</kbd>
-    - current line to 6th current line = <kbd>y</kbd> + <kbd>6</kbd> + <kbd>G</kbd>
+- current line to nth current line = <kbd>y</kbd><kbd>n</kbd><kbd>G</kbd>
+    - current line to 6th current line = <kbd>y</kbd><kbd>6</kbd><kbd>G</kbd>
 
 ## How to paste
 
