@@ -108,10 +108,6 @@ Modes in Vi or Vim
 
 
 
-
-
-
-
 ## Movements
 
 Movements are in <kbd>Normal</kbd> mode.
@@ -119,6 +115,7 @@ Movements are in <kbd>Normal</kbd> mode.
 Always press <kbd>Esc</kbd> first.
 
 ### Move cursor
+> Always press <kbd>Esc</kbd> first.
 
 up = <kbd>k</kbd> 
 
@@ -129,6 +126,7 @@ left = <kbd>h</kbd>
 right = <kbd>l</kbd> 
 
 ### Move cursor by word
+>  Always press <kbd>Esc</kbd> first.
 
 end of word = <kbd>e</kbd>
 
@@ -143,11 +141,15 @@ right to nearest "z" character = <kbd>f</kbd> + <kbd>z</kbd>
 left to nearest "z" character = <kbd>F</kbd> + <kbd>z</kbd>
 
 ### Move to specific file location
+>  Always press <kbd>Esc</kbd> first.
+
 beginning of file = <kbd>gg</kbd>
 
 end of file = <kbd>shift</kbd> + <kbd>g</kbd>
 
 beginning of non-whitespace part of line  = <kbd>^</kbd>
+
+beginning of line = <kbd></kbd>
 
 
 
@@ -187,9 +189,6 @@ Go to window above = <kbd>ctrl</kbd> + <kbd><w</kbd> + <kbd>k</kbd> (Press all
 keys at the same time)
 
 Go to window below = <kbd>ctrl</kbd> + <kbd><w</kbd> + <kbd>k</kbd>
-
-
-
 
 
 ## Shell (Exit temporary to a shell)
@@ -286,6 +285,8 @@ Yank (or copy) lines
 ## How to paste
 
 Paste uses <kbd>p</kbd> operation
+
+Open up a line above and paste = <kbd>shift</kbd>+<kbd>p</kbd>
 
 ## How to delete
 
