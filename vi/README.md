@@ -1,3 +1,7 @@
+# Vi Editor
+
+Vi or Vim is an text editor. 
+
 ## Always press <kbd>Esc</kbd>
 
 Any instruction does not explicitly <kbd>Esc</kbd> does includes
@@ -6,21 +10,16 @@ Any instruction does not explicitly <kbd>Esc</kbd> does includes
 Always press <kbd>Esc</kbd> to enter <kbd>Normal</kbd> (or Command) mode before any
 commands.
 
-## Modes in Vi or Vim 
-Modes in Vi or Vim 
-- Command mode = <kbd>Normal</kbd> mode = <kbd>Esc</kbd>
-- Typing  = To insert character to file  = <kbd>Insert</kbd> mode = <kbd>Esc</kbd> + <kbd>i</kbd>
-
-
+## How to read/use command instruction from this note
 Press <kbd>Key</kbd> together when <kbd>Key</kbd> are connected with `-`.
 
 - <kbd>ctrl</kbd>-<kbd>w</kbd>-<kbd>k</kbd>
 
 
-Press <kbd>Key</kbd> separately when <kbd>Key</kbd> are connected with `+`.
+Press <kbd>Key</kbd> separately when <kbd>Key</kbd> are connected with or without `+`.
 - <kbd>10</kbd> + <kbd>G</kbd> can be type `:10G<CR>`
 
-Whenever `:text<CR>`
+Whenever `:text<CR>` or `:text`
 1. Press <kbd>Esc</kbd> to enter <kbd>Normal</kbd> (or Command) mode.
 
 2. Type `:`
@@ -28,6 +27,65 @@ Whenever `:text<CR>`
 3. Type whicheverr command `text` in placeholder shown in instruction. 
 
 4. `<CR>` = Press <kbd>Enter</kbd>
+
+
+## Modes in Vi or Vim 
+Modes in Vi or Vim 
+- Command mode = <kbd>Normal</kbd> mode = <kbd>Esc</kbd>
+- Typing  = To insert character to file  = <kbd>Insert</kbd> mode = <kbd>Esc</kbd> + <kbd>i</kbd>
+
+## Workflow of Editing a file
+
+1. On the terminal, `vi filename`.
+
+> `vi` = path to `vi`, `vim`, or `gvim`, etc. 
+
+> `filename` = path of file to be editied in `vi`.  
+
+2. Press <kbd>Esc</kbd>
+
+> Remove any previous command and enter into <kbd>Normal</kbd> (or Command)
+> mode.
+
+3. Type `i` to switch to <kbd>Insert</kbd> mode
+
+4. Press <kbd>Esc</kbd>
+
+> Remove any previous command and enter into <kbd>Normal</kbd> (or Command)
+> mode.
+
+5. Type `:wq<CR>` to write and quit (exit) vim.
+> `w` = write
+> `q` = quit (Exit) 
+
+
+## File Manipulation Commands
+
+- Write (Save) file =  `:w`
+
+- Refresh file = `:e` 
+
+- Load and edit file to current workspace = `:e filename`
+> where `filename` is the path to file 
+
+- Read file to current workspace = `:r filename` 
+> where `filename` is the path to file
+
+## Exit Command
+
+- Write file and quit editor = `:wq` + <kbd>Enter</kbd>
+> Same command with <kbd>Esc</kbd><kbd>Z</kbd><kbd>Z</kbd> 
+
+
+- Write file and quit editor with no warning = `:wq!` + <kbd>Enter</kbd>
+
+- Quit file = `:q` + <kbd>Enter</kbd>
+> Warning is printed if a modified file has not been saved. 
+
+
+
+
+
 
 
 ## Navigation
