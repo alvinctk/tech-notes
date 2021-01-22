@@ -98,24 +98,24 @@ Modes in Vi or Vim
 > `q` = quit (Exit) 
 
 
-## Basic commands 
+## How to insert text
 
-<kbd>Insert</kbd> mode  = <kbd>Esc</kbd> + <kbd>i</kbd>
+Insert text 
+> The following commands transition from <kbd>Normal</kbd> mode to
+> <kbd>Insert</kbd> mode 
 
-    <kbd>a</kbd> = Append text following current cursor position
+- <kbd>a</kbd> = Append text following current cursor position
 
-    <kbd>A</kbd> = Append text to the end of current line
+- <kbd>A</kbd> = Append text to the end of current line
 
-    <kbd>i</kbd> = Insert text before the current cursor position
+- <kbd>i</kbd> = Insert text before the current cursor position
 
-    <kbd>I</kbd> = Insert text at the beginning of the cursor line
+- <kbd>I</kbd> = Insert text at the beginning of the cursor line
 
-    <kbd>o</kbd> = Open a new line following the current line and insert text
+- <kbd>o</kbd> = Open a new line following the current line and insert text
 
-    <kbd>O</kbd> = Open a new line above the current line and insert text
+- <kbd>O</kbd> = Open a new line above the current line and insert text
 
-<kbd>Normal</kbd> mode = <kbd>Esc</kbd>
-    
 
 
 
