@@ -10,7 +10,41 @@ commands.
 
 <kbd>Insert</kbd> mode  = <kbd>Esc</kbd> + <kbd>i</kbd>
 
-## How to delete characters in a line
+## How to copy 
+
+Copy uses <kbd>y</kbd> (yank) operation.
+
+In <kbd>Normal</kbd> mode, copy or yank = <kbd>y</kbd> + <kbd>Any motion</kbd>
+
+Always enter <kbd>Normal</kbd> mode first = Press <kbd>Esc</kbd>
+
+`\n` = newline character at the end
+
+- Yank the current word (excludes surrounding space) = <kbd>y</kbd> + <kbd>i</kbd> + <kbd>w</kbd>
+- Yank the current word (includes surrounding space) = <kbd>y</kbd> + <kbd>a</kbd> + <kbd>w</kbd>
+
+- Yank the current curssor until before character `x` = <kbd>y</kbd> + <kbd>t</kbd> + <kbd>x</kbd>
+- Yank the current cursor until character `x`  = <kbd>y</kbd> + <kbd>f</kbd> + <kbd>x</kbd>
+
+
+- Yank current line including `\n` - <kbd>Esc</kbd> + <kbd>y</kbd> + <kbd>y</kbd> or 
+
+- Yank from current cusor to end of line = <kbd>Esc</kbd> + <kbd>y</kbd> + <kbd>$</kbd>
+
+- Yank n lines including current line = <kbd>Esc</kbd> + <kbd>n</kbd> + <kbd>y</kbd> + <kbd>y</kbd>
+- Yank 3 lines including current line = <kbd>Esc</kbd> + <kbd>3</kbd> + <kbd>y</kbd> + <kbd>y</kbd>
+
+- Yank from current line to end of file = <kbd>Esc</kbd> + <kbd>y</kbd> + <kbd>G</kbd>
+
+- Yank current line to nth current line = <kbd>Esc</kbd> + <kbd>y</kbd> + <kbd>n</kbd> + <kbd>G</kbd>
+
+- Yank current line to 6th current line = <kbd>Esc</kbd> + <kbd>y</kbd> + <kbd>6</kbd> + <kbd>G</kbd>
+
+## How to paste
+
+Paste uses <kbd>p</kbd> operation
+
+## How to delete
 
 - Delete characters at current cursor =  <kbd>Esc</kbd> + <kbd>x</kbd>
 
@@ -18,8 +52,22 @@ commands.
 > where <kbd>n</kbd> can be any number <kbd>1</kbd>, <kbd>2</kbd>, ....,
 > <kbd>n</kbd> 
 
-
 - Delete 4 characters from current cursor = <kbd>Esc</kbd> + <kbd>4</kbd> + <kbd>x</kbd>
+
+- Delete current line = <kbd>Esc</kbd> + <kbd>d</kbd> + <kbd>d</kbd>
+
+- Delete n lines from current cursor = <kbd>Esc</kbd> + <kbd>n</kbd> + <kbd>d</kbd> + <kbd>d</kbd>
+
+> where <kbd>n</kbd> can be any number <kbd>1</kbd>, <kbd>2</kbd>, ....,
+> <kbd>n</kbd> 
+
+- Delete current lines from end of file= <kbd>Esc</kbd> + <kbd>d</kbd> + <kbd>G</kbd>
+
+- Delete 3 lines from current cursor = <kbd>Esc</kbd> + <kbd>3</kbd> + <kbd>d</kbd> + <kbd>d</kbd>
+
+- Delete from current line to nth line = <kbd>Esc</kbd> + <kbd>d</kbd> + <kbd>n</kbd> + <kbd>G</kbd>
+- Delete from current line to 3th line = <kbd>Esc</kbd> + <kbd>d</kbd> + <kbd>3</kbd> + <kbd>G</kbd>
+
 
 ## How to go to nth line
 
