@@ -32,18 +32,18 @@ commands.
 
 Commands starting with `:` ends with <kbd>Enter</kbd>. 
 
-    > For example, when I write `:q` or `:q<CR>`, I mean <kbd>`Esc`</kbd>`:q`<kbd>`Enter`</kbd>
+For example, when I write `:q` or `:q<CR>`, I mean <kbd>`Esc`</kbd>`:q`<kbd>`Enter`</kbd>
 
-    > For example, when I `:text<CR>` or `:text`
-    > 1. Press <kbd>Esc</kbd> to enter <kbd>Normal</kbd> (or Command) mode.
+For example, when I write `:text<CR>` or `:text`
+1. Press <kbd>Esc</kbd> to enter <kbd>Normal</kbd> (or Command) mode.
 
-    > 2. Type `:`
+2. Type `:`
 
-    > 3. Type whichever command `text` in placeholder shown in instruction. 
+3. Type whichever command `text` in placeholder shown in instruction. 
 
-    > 4. `<CR>` = Press <kbd>Enter</kbd>
-    > > <kbd>Enter</kbd> is needed to execute the command indicated after `:` and
-    > > before <kbd>Enter</kbd> or `<CR>`
+4. `<CR>` = Press <kbd>Enter</kbd>
+> <kbd>Enter</kbd> is needed to execute the command indicated after `:` and
+> before <kbd>Enter</kbd> or `<CR>`
 
 Press <kbd>Key</kbd> together when <kbd>Key</kbd> are connected with `-`.
 
