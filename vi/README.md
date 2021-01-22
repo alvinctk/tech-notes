@@ -4,7 +4,26 @@ Any instruction does not explicitly <kbd>Esc</kbd> does includes
 <kbd>Esc</kbd>. 
 
 Always press <kbd>Esc</kbd> to enter <kbd>Normal</kbd> (or Command) mode before any
-commands. 
+commands.
+
+## Relative number lines 
+
+Put the following in your `~/.vimrc`:
+```vi
+set number           " Display line number 
+set relativenumber   " Display relative line number from current
+```
+
+Or in the vi editor
+
+First, press <kbd>Esc</kbd> to enter <kbd>Normal</kbd> mode.
+
+```
+:set number<CR>
+:set relativenumber<CR>
+```
+> where `<CR>` is <kbd>Enter</kbd>
+
 
 ## How to insert text
 
