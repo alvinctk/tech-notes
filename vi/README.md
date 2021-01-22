@@ -2,14 +2,23 @@
 
 Vi or Vim is an text editor. 
 
-By default, Vi starts in <kbd>Normal</kbd> mode. <kbd>Normal</kbd> mode can be
-accessed by pressing <kbd>Esc</kbd>. 
+> Learn Vi or Vim progressively. Only you can teach yourself Vi or Vim. The fastest way possible is to
+> **start** by learning the minimal to survive, then you integrate all the
+> tricks slowly. 
 
-Whenever in doubt, press <kbd>Esc</kbd>. Always press <kbd>Esc</kbd>.
+## Lesson one to survive in Vi
 
-If you accidentally open a file in Vi, press <kbd>Esc</kbd> -> type `:q!` -> <kbd>Enter</kbd>.
+Whenever in doubt, press <kbd>Esc</kbd>. 
+> Always press <kbd>Esc</kbd>. 
 
-Enjoy the Vi editor command notes below. 
+Do nothing and press <kbd>Esc</kbd> again.
+
+Exit the editor Vi by pressing <kbd>Esc</kbd> -> type `:q!` -> <kbd>Enter</kbd>.
+
+> But before we start, just a warning. Learning Vim will be painful at first.
+> It will take time. Don't expect to be more efficient with vim than other
+> editor in less than 3 days. In fact it will certainly take 2 weeks instead of
+> 3 days. 
 
 ## Always press <kbd>Esc</kbd>
 
@@ -19,18 +28,22 @@ Any instruction does not explicitly <kbd>Esc</kbd> does includes
 Always press <kbd>Esc</kbd> to enter <kbd>Normal</kbd> (or Command) mode before any
 commands.
 
-## How to read/use command instruction from this note
+## How to learn from this note nstruction
 
-Whenever `:text<CR>` or `:text`
-1. Press <kbd>Esc</kbd> to enter <kbd>Normal</kbd> (or Command) mode.
+Commands starting with `:` ends with <kbd>Enter</kbd>. 
 
-2. Type `:`
+    > For example, when I write `:q` or `:q<CR>`, I mean <kbd>`Esc`</kbd>`:q`<kbd>`Enter`</kbd>
 
-3. Type whicheverr command `text` in placeholder shown in instruction. 
+    > For example, when I `:text<CR>` or `:text`
+    > 1. Press <kbd>Esc</kbd> to enter <kbd>Normal</kbd> (or Command) mode.
 
-4. `<CR>` = Press <kbd>Enter</kbd>
-> <kbd>Enter</kbd> is needed to execute the command indicated after `:` and
-> before <kbd>Enter</kbd> or `<CR>`
+    > 2. Type `:`
+
+    > 3. Type whichever command `text` in placeholder shown in instruction. 
+
+    > 4. `<CR>` = Press <kbd>Enter</kbd>
+    > > <kbd>Enter</kbd> is needed to execute the command indicated after `:` and
+    > > before <kbd>Enter</kbd> or `<CR>`
 
 Press <kbd>Key</kbd> together when <kbd>Key</kbd> are connected with `-`.
 
@@ -57,6 +70,8 @@ Modes in Vi or Vim
 > <kbd>Normal</kbd>, <kbd>Insert</kbd>, <kbd>Visual</kbd>, <kbd>V-Block</kbd>, and <kbd>V-Line</kbd> are not keys but to present `vi` modes in the editor
 
 > <kbd>Visual</kbd>, <kbd>V-Block</kbd>, and <kbd>V-Line</kbd> are types of <kbd>Visual</kbd> modes.
+
+> Vi starts the editor in <kbd>Normal</kbd> mode.
 
 ## Workflow of Editing a file
 
@@ -149,7 +164,9 @@ end of file = <kbd>shift</kbd> + <kbd>g</kbd>
 
 beginning of non-whitespace part of line  = <kbd>^</kbd>
 
-beginning of line = <kbd></kbd>
+beginning of line = <kbd>0</kbd> (Enter number 0)
+
+end of line = <kbd>$</kbd>
 
 
 
