@@ -28,7 +28,7 @@ Any instruction does not explicitly <kbd>Esc</kbd> does includes
 Always press <kbd>Esc</kbd> to enter <kbd>Normal</kbd> (or Command) mode before any
 commands.
 
-## How to learn from this note nstruction
+## How to learn from this note instruction
 
 Commands starting with `:` ends with <kbd>Enter</kbd>. 
 
@@ -51,7 +51,7 @@ Press <kbd>Key</kbd> together when <kbd>Key</kbd> are connected with `-`.
 
 
 Press <kbd>Key</kbd> separately when <kbd>Key</kbd> are connected with or without `+`.
-- <kbd>10</kbd> + <kbd>G</kbd> can be type `:10G` <kbd>Enter</kbd>
+- <kbd>10</kbd> + <kbd>G</kbd> can be <kbd>Esc</kbd>, then type `:10G` <kbd>Enter</kbd>
 - <kbd>Esc</kbd><kbd>g</kbd><kbd>g</kbd>  can be <kbd>Esc</kbd>, then type `:gg` + <kbd>Enter</kbd>
 
 
