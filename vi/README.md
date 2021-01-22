@@ -36,9 +36,11 @@ Whenever `:text<CR>` or `:text`
 Modes in Vi or Vim 
 - Command mode = <kbd>Normal</kbd> mode = <kbd>Esc</kbd>
 
-- Typing  = To insert character to file  = <kbd>Insert</kbd> mode = <kbd>Esc</kbd> + <kbd>i</kbd>
+- Typing  = To insert character to file  = <kbd>Insert</kbd> mode = <kbd>Esc</kbd><kbd>i</kbd>
 
-> <kbd>Normal</kbd> and <kbd>Insert</kbd> are not keys but to present modes. 
+- Visual = To select rows and columns = <kbd>Visual</kbd> mode = <kbd>Esc</kbd><kbd>v</kbd>
+
+> <kbd>Normal</kbd>, <kbd>Insert</kbd>, and <kbd>Visual</kbd> are not keys but to present `vi` modes in the editor 
 
 ## Workflow of Editing a file
 
