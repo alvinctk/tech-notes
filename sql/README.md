@@ -1,3 +1,66 @@
+## Pattern Matching 
+Pattern matching uses keyword `LIKE` and (`%` and `_`) wildcard symbols.
+
+`%` wildcard matches zero or more characters of any type. The wildcard can be
+used before, after, or both (before and after) the pattern. 
+
+`_` wildcard matches any character for one character position. 
+
+- First name beginning with letter A
+```sql
+SELECT
+    *
+FROM
+    students
+WHERE
+    first_name LIKE "A%"
+```
+
+- Omitting patterns using `NOT` keyword
+```sql
+SELECT
+    *
+FROM
+    students
+WHERE
+    first_name NOT LIKE "%A%"
+```
+
+- Specific location  using `_` wildcard - third character is `A`
+```sql
+SELECT
+    *
+FROM
+    students
+WHERE
+    first_name LIKE "__A%"
+
+```
+- n or more letters - 4 or more letters
+```sql
+SELECT
+    *
+FROM
+    students
+WHERE
+    first_name LIKE "____%"
+
+```
+
+- exactly n letters - exactly 4 letters
+```sql
+SELECT
+    *
+FROM
+    students
+WHERE
+    first_name LIKE "____"
+
+```
+
+
+
+
 
 ## Nested Queries
 
@@ -44,6 +107,14 @@ total = reduce(lambda x, y: x + y, range(1, 11))
 >>> total
 ```
 55
+
+## View
+
+A view is a logical snapshot based on a table or another view. It is used 
+- Restricting access to data
+- Making complex queries simple
+- Ensuring data independency
+- Providing different views of same data
 
 
 
