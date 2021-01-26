@@ -1,4 +1,4 @@
 ## SQL Joins 
 
-![SQL Joins](./sql_joins.jpg)*SQL joins and tricks*
+![SQL Joins](./sql_joins.jpg)
 
