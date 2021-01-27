@@ -141,8 +141,7 @@ The only way to declare variables in SQL
 ## Window Function
 
 ```sql
--- Aggregrations / rankings on a subset of rows relative to the current
-row being transformed by SELECT
+-- Aggregrations / rankings on a subset of rows relative to the current row being transformed by SELECT
 
 function (...) OVER (
     PARTITION BY ...
