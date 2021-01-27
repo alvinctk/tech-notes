@@ -24,6 +24,7 @@ FROM my_table
 
 
 1. `FROM` and `JOIN`s 
+
 The `FROM` clause and subsequent `JOIN`s are first executed to determine the
 working set of data to be queried. This can includes subqueries in this clause,
 and can cause temporary table to be created under the hood containning all the
