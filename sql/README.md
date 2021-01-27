@@ -281,4 +281,15 @@ SELECT * FROM CTE WHERE rn <= n
 `ROW_NUMBER` is a function. 
 
 
+## References 
+
+- [Select Star SQL](https://selectstarsql.com)
+- [Select first row in each GROUP BY group?](https://stackoverflow.com/questions/3800551/select-first-row-in-each-group-by-group)
+- [SQL Window Functions](https://mode.com/sql-tutorial/sql-window-functions/)
+- [PostgreSQL: optimizing DISTINCT](https://explainextended.com/2009/05/03/postgresql-optimizing-distinct/)
+- [10 SQL Tricks That You Didn't Think Were Possible](https://de.slideshare.net/LukasEder1/10-sql-tricks-that-you-didnt-think-were-possible/)
+- [SQLBolt - Learn SQL with simple, interactive exercises](https://sqlbolt.com)
+- [LeetCode Curated SQL 70](https://leetcode.com/problemset/leetcode-curated-sql-70/)
+- [w3schools.com](https://www.w3schools.com/sql/default.asp)
+
 
