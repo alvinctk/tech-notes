@@ -133,3 +133,63 @@ aggregration.
 
 ![SQL Joins](./sql_joins.jpg)
 
+
+## Common Table Expressions 
+The only way to declare variables in SQL
+
+
+## Window Function
+
+```sql
+-- Aggregrations / rankings on a subset of rows relative to the current
+row being transformed by SELECT
+
+function (...) OVER (
+    PARTITION BY ...
+    ORDER BY ...
+    ROWS BETWEEN ... AND ...
+)
+```
+
+### Getting a running total 
+Given table `Accounts` with columns `event_date`, and `amount`. Find the running total
+at each `event_date`.
+
+```sql
+SELECT 
+    event_date,
+    SUM(amount) over (ORDER BY event_date ASC) AS running_total
+FROM
+    Accounts
+ORDER BY
+    event_date ASC
+```
+
+### Populate total count in each row
+```sql 
+SELECT 
+    whatever_columns,
+    COUNT(*) OVER() as total_count 
+FROM
+    table
+```
+
+### Getting the N most recent rows over mutliple goruping
+```sql
+WITH CTE AS (
+    SELECT 
+        *,
+        ROW_NUMBER() OVER (PARTITION BY user_id 
+                           ORDER BY completion_date DESC) AS rn
+    FROM
+        Table
+
+
+SELECT * FROM CTE WHERE rn <= n 
+)
+```
+
+`ROW_NUMBER` is a function. 
+
+
+
