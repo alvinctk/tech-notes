@@ -608,5 +608,6 @@ SELECT 1 + 1 FROM DUAL
 - [SQLBolt - Learn SQL with simple, interactive exercises](https://sqlbolt.com)
 - [LeetCode Curated SQL 70](https://leetcode.com/problemset/leetcode-curated-sql-70/)
 - [w3schools.com](https://www.w3schools.com/sql/default.asp)
-
+- [PostgreSQL Tutorial](https://www.postgresqltutorial.com)
+- [MySQL Tutorial](https://www.mysqltutorial.org)
 
