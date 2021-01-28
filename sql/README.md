@@ -230,10 +230,15 @@ A view is a logical snapshot based on a table or another view. It is used
 
 
 
+<details>
+<summary>JOINS</summary>
 
 ## SQL Joins 
 
 ![SQL Joins](./sql_joins.jpg)
+
+<details>
+<summary>Types of Joins</summary>
 
 At the top level, there are mainly 3 types of joins:
 
@@ -252,7 +257,10 @@ At the top level, there are mainly 3 types of joins:
 
     - Similar to scenario where we simply lists the tables for joining (in the
       `FROM` clauses of the `SELECT` statement), using commas to separate them
+</details>
 
+<details>
+<summary>Equivalent Types of JOINS</summary>
 
 **Points to be noted:**
 
@@ -262,14 +270,19 @@ At the top level, there are mainly 3 types of joins:
 
 - You can drop `OUTER` keyword and just say `LEFT JOIN` or `RIGHT JOIN` or
   `FULL JOIN`. 
-
+</details>
  
 
+<details>
+<summary>Differences between LEFT JOIN and LEFT OUTER JOIN</summary>
 
 > What is the differences between `LEFT JOIN` and `LEFT OUTER JOIN`?
 
 **Nothing**. `LEFT JOIN` and `LEFT OUTER JOIN` are equivalent. 
+</details>
 
+<details>
+<summary>When Venn Diagrams fails to illustrate</summary>
 
 **Points to note on Venn Diagram**
 
@@ -281,6 +294,9 @@ difficult to explain.
 
 Read [Stackoverflow post on why Venn Diagram isn't help to illustrate nulls.](https://stackoverflow.com/a/38578)
 
+</details>
+
+</details>
 
 ## Common Table Expressions 
 The only way to declare variables in SQL
