@@ -334,10 +334,10 @@ recursive CTE
 
 ```sql 
 WITH CTE AS (
-    <base_query>                   -- base member (anchor member)
+    <base_query>                      -- base member (anchor member)
     UNION ALL
-    <recursive_query involving R>  -- recursive member; references CTE
-)                                  -- end of CTE
+    <recursive_query involving CTE>   -- recursive member; references CTE
+)                                     -- end of CTE
 
 <query involving CTE>
 ```
@@ -346,9 +346,11 @@ DISTINCT`.
 
 
 
-> Base query does not involve R
+> Base query does not involve CTE
 
-> Recursive query references R
+> Recursive query references CTE
+
+> Use `WHERE` clause to terminate recursion in `<recursive_query invovling CTE>`
 
 
 ### Recursive member restrictions 
