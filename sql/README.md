@@ -259,6 +259,16 @@ At the top level, there are mainly 3 types of joins:
 **Nothing**. `LEFT JOIN` and `LEFT OUTER JOIN` are equivalent. 
 
 
+**Points to note on Venn Diagram**
+
+Venn diagrams are helpful to illustrates the differences in output rows if
+tables has no nulls or duplicate rows. 
+
+However, if table contains null and duplicate rows, then a Venn diagram is
+difficult to explain. 
+
+Read [Stackoverflow post on why Venn Diagram isn't help to illustrate nulls.](https://stackoverflow.com/a/38578)
+
 
 ## Common Table Expressions 
 The only way to declare variables in SQL
