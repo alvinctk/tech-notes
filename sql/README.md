@@ -323,6 +323,60 @@ WHERE
 ## Common Table Expressions 
 The only way to declare variables in SQL
 
+
+### Recursive Common Table Expression
+
+[Recursion in sql explained graphically](https://medium.com/swlh/recursion-in-sql-explained-graphically-679f6a0f143b). 
+
+Recursive Common Table Expression (CTE) is a CTE that has a subquery which
+refers to the CTE name itself. The following illustrates the syntax of a
+recursive CTE
+
+```sql 
+WITH CTE AS (
+    <base_query>                   -- base member (anchor member)
+    UNION ALL
+    <recursive_query involving R>  -- recursive member; references CTE
+)                                  -- end of CTE
+
+<query involving CTE>
+```
+Recursive member is joined with the anchor member by a `UNION ALL` or `UNION
+DISTINCT`. 
+
+
+
+> Base query does not involve R
+
+> Recursive query references R
+
+
+### Recursive member restrictions 
+
+The recursive member must not contains the following constructs:
+
+- Aggregate functions e.g. `MAX`, `MIN`, `SUM`, `AVG`, `COUNT`, etc.
+
+- `GROUP BY` clause
+
+- `ORDER BY` clause
+
+- `LIMIT` clause
+
+- `DISTINCT`
+
+> Note that the above constraint does not apply to the anchor member. Also, the
+> prohibition on `DISTINCT` applies only when use `UNION` operator. In case you
+> use the `UNION DISTINCT` operator, the `DISTINCT` is permitted.
+
+
+### Tutorial and Diagrams on Recursive CTE
+
+[MYSQL Recursive CTE](https://www.mysqltutorial.org/mysql-recursive-cte/)
+
+![Recursive query execution algorithm flow chart](https://miro.medium.com/max/604/1*Ntv9X7rb3yf6aiKGRBrBYw.png)
+
+
 </details>
 
 <details>
@@ -339,6 +393,9 @@ function (...) OVER (
     ROWS BETWEEN ... AND ...
 )
 ```
+
+[PostgreSQL Window Function Documentation](https://www.postgresql.org/docs/10/functions-window.html)
+
 
 ### Getting a running total 
 Given table `Accounts` with columns `event_date`, and `amount`. Find the running total
@@ -380,6 +437,35 @@ SELECT * FROM CTE WHERE rn <= n
 
 `ROW_NUMBER` is a function. 
 </details>
+
+<details>
+<summary>What is this?</summary>
+
+
+<details>
+<summary>DUAL</summary>
+[According to SELECT 1 FROM DUAL](https://forums.mysql.com/read.php?10,69223,69226#msg-69226)
+
+> "You are allowed to specify `DUAL` as a dummy table name in situations where
+> no tables are referenced."
+
+DUAL is purely for compatibility with some other database servers that require
+a `FROM` clause. 
+
+```sql
+SELECT 1 + 1 FROM DUAL
+```
+
+</details>
+
+<details>
+<summary>IFNULL</summary>
+</details>
+
+
+
+</details>
+
 
 
 ## References 
