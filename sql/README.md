@@ -471,7 +471,9 @@ we use `CASE` to turn `NULL`s into values and values into `NULL`s.
 
 <details>
 <summary>COUNT with other constraints</summary>
+
 ### COUNT
+
 > `COUNT` counts the number of non-NULL items. Any NULL items are ignored.
 
 `COUNT(*) ` - Count rows in the table
@@ -480,7 +482,7 @@ we use `CASE` to turn `NULL`s into values and values into `NULL`s.
 
 > `COUNT(Major)` may have the same result as `COUNT(*)`, but what it represent differs.
 
-## `COUNT(*)` != `COUNT(Major)`
+### `COUNT(*)` != `COUNT(Major)`
 
 Suppose `Major` column has duplicate values.
 
@@ -504,7 +506,8 @@ Rows are removed when the constraint in the SQL query clause is not met.
 
 `COUNT(...)` counts the remaining number of rows.
 
-Example 1
+#### Example 1
+
 ```sql
 SELECT
     COUNT(Major)
@@ -515,7 +518,7 @@ WHERE
 ```
 In example 1, rows with `ShareWomen >= 0.3` are removed. `COUNT(Major)` returns the number of non-NULL Majors where ShareWomen < 0.3.
 
-Example 2
+#### Example 2
 ```sql
 SELECT
     Major_category,
@@ -528,7 +531,8 @@ GROUP BY
 
 In example 2, `COUNT(Major)` counts the number of majors in each `Major_category`.
 
-Example 3
+#### Example 3
+
 ```sql
 SELECT
    Major_category,
