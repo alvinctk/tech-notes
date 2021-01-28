@@ -1,6 +1,6 @@
 ## Query Clause Order
 
-Complete `SELECT` query
+### Complete `SELECT` query
 ```sql
 SELECT DISTINCT column, AGG_FUNC(column_or_expression), ...
 FROM my_table
@@ -23,14 +23,14 @@ FROM my_table
 ```
 
 
-1. `FROM` and `JOIN`s 
+### 1. `FROM` and `JOIN`s 
 
 The `FROM` clause and subsequent `JOIN`s are first executed to determine the
 working set of data to be queried. This can includes subqueries in this clause,
 and can cause temporary table to be created under the hood containning all the
 columns and rows joined.
 
-2. `WHERE`
+### 2. `WHERE`
 
 Each of the `WHERE` constraints can only be access columns directly from table
 requested in the `FROM` clause. 
@@ -39,7 +39,7 @@ Aliases in the `SELECT` part of the query are not accessible in most databases
 since they may include expressions dependent on parts of the query that have
 not yet executed. 
 
-3. `GROUP BY` 
+### 3. `GROUP BY` 
 
 The remaining rows after `WHERE` constraints are applied are then grouped based
 on common values in the column specified by `GROUP BY` clause.
@@ -50,7 +50,7 @@ unique values in that column.
 Implicitly, this means that you should only need ot use this when you have
 aggregrate functions in your query.
 
-4. `HAVING`
+### 4. `HAVING`
 
 If the query has a `GROUP BY` clause, then the constraints in the `HAVING`
 clause are then applied to the grouped rows, discard the grouped rows that
@@ -59,17 +59,17 @@ don't satisfy this constraint.
 Like the `WHERE` clause, aliases are not accessible from this step in most
 database. 
 
-5. `SELECT` 
+### 5. `SELECT` 
 
 Any expression in the `SELECT` part of the query are finally computed. 
 
-6. `DISTINCT`
+### 6. `DISTINCT`
 
 Of the remaining rows, rows with duplicate values in the column marked as
 `DISTINCT` will be discarded.
 
 
-7. `ORDER BY` 
+### 7. `ORDER BY` 
 
 If an order is specified by the `ORDER BY` clause, the rows are then sorted by
 the specified data in either ascending or descending order. Since all the
@@ -77,7 +77,7 @@ expression in the `SELECT` part of the query have been computed, you can
 reference aliases in this clause.
 
 
-8. `LIMIT` / `OFFSET` 
+### 8. `LIMIT` / `OFFSET` 
 
 Finally the rows that fall outside the range specified by the `LIMIT` and
 `OFFSET` are discarded, leaving the final set of rows to be returned from the
