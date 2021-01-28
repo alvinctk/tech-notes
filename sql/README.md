@@ -1,4 +1,54 @@
 <details>
+<summary>Theory and Terminology</summary>
+
+<details>
+<summary>MapReduce</summary>
+
+## MapReduce
+
+
+> MapReduce is a famous programming paradigm which views computations as
+> occuring in a "map" and "reduce" step. 
+
+According to the [Simple MapReduce explanation](https://stackoverflow.com/questions/28982/simple-explanation-of-mapreduce),
+
+> **Map** is a function that transforms each element in the data. 
+
+```python
+A = [1, 2, 3]
+A = map(lambda x: x * 2, A)
+print(A)
+```
+```text
+[2, 4, 6]
+```
+
+> **Reduce** is a function which "collects" items in the data and perform some
+> computation on all of them. Thus reducing them into a single item. 
+
+```python
+from functools import reduce
+total = reduce(lambda x, y: x + y, range(1, 11))
+>>> total
+```
+55
+</details>
+
+<details>
+<summary>View</summary>
+
+## View
+
+A view is a logical snapshot based on a table or another view. It is used 
+- Restricting access to data
+- Making complex queries simple
+- Ensuring data independency
+- Providing different views of same data
+</details>
+
+</details>
+
+<details>
  <summary>Query</summary>
 
 
@@ -264,55 +314,7 @@ WHERE
 ```
 </details>
 
-<details>
-<summary>Theory and Terminology</summary>
 
-<details>
-<summary>MapReduce</summary>
-
-## MapReduce
-
-
-> MapReduce is a famous programming paradigm which views computations as
-> occuring in a "map" and "reduce" step. 
-
-According to the [Simple MapReduce explanation](https://stackoverflow.com/questions/28982/simple-explanation-of-mapreduce),
-
-> **Map** is a function that transforms each element in the data. 
-
-```python
-A = [1, 2, 3]
-A = map(lambda x: x * 2, A)
-print(A)
-```
-```text
-[2, 4, 6]
-```
-
-> **Reduce** is a function which "collects" items in the data and perform some
-> computation on all of them. Thus reducing them into a single item. 
-
-```python
-from functools import reduce
-total = reduce(lambda x, y: x + y, range(1, 11))
->>> total
-```
-55
-</details>
-
-<details>
-<summary>View</summary>
-
-## View
-
-A view is a logical snapshot based on a table or another view. It is used 
-- Restricting access to data
-- Making complex queries simple
-- Ensuring data independency
-- Providing different views of same data
-</details>
-
-</details>
 
 <details>
 <summary>Advanced SQL</summary>
