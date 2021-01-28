@@ -223,6 +223,41 @@ aggregration.
 
 ![SQL Joins](./sql_joins.jpg)
 
+At the top level, there are mainly 3 types of joins:
+
+- `INNER`
+    - fetches data if pressent in both the tables
+
+- `OUTER`
+    - `LEFT OUTER JOIN` fetches data if present in the left table.
+
+    - `RIGHT OUTER JOIN` fetches data if present in the right table.
+
+    - `FULL OUTER JOIN` fetches data if present in the either of the two table.
+
+- `CROSS`
+    - as the name suggets, does `[n X m]` that joins everything to everything. 
+
+    - Similar to scenario where we simply lists the tables for joining (in the
+      `FROM` clauses of the `SELECT` statement), using commas to separate them
+
+
+**Points to be noted: **
+- If you mention `JOIN`, then by default it is a `INNER JOIN`.
+
+- An `OUTER` join has to be `LEFT` | `RIGHT` | `FULL` you can not simply say `OUTER JOIN`
+
+- You can drop `OUTER` keyword and just say `LEFT JOIN` or `RIGHT JOIN` or
+  `FULL JOIN`. 
+
+ 
+
+
+> What is the differences between `LEFT JOIN` and `LEFT OUTER JOIN`?
+
+**Nothing**. `LEFT JOIN` and `LEFT OUTER JOIN` are equivalent. 
+
+
 
 ## Common Table Expressions 
 The only way to declare variables in SQL
