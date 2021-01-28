@@ -1,5 +1,5 @@
 <details>
-<summary>Theory</summary>
+ <summary>Theory</summary>
 
 <details>
 <summary>MapReduce</summary>
@@ -32,6 +32,7 @@ total = reduce(lambda x, y: x + y, range(1, 11))
 >>> total
 ```
 55
+
 </details>
 
 <details>
@@ -44,6 +45,7 @@ A view is a logical snapshot based on a table or another view. It is used
 - Making complex queries simple
 - Ensuring data independency
 - Providing different views of same data
+
 </details>
 
 </details>
