@@ -1,5 +1,6 @@
 <details>
     <summary>Query Clause Order</summary>
+
 ## Query Clause Order
 
 ### Complete `SELECT` query
