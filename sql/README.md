@@ -200,6 +200,9 @@ Read [Stackoverflow post on why Venn Diagram isn't help to illustrate nulls.](ht
 
 </details>
 
+<details>
+<summary>Pattern Matching</summary>
+
 ## Pattern Matching 
 Pattern matching uses keyword `LIKE` and (`%` and `_`) wildcard symbols.
 
@@ -259,7 +262,7 @@ WHERE
     first_name LIKE "____"
 
 ```
-
+</details>
 
 
 
