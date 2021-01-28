@@ -5,6 +5,7 @@
 
 <details>
 <summary>Go Inside the mind of the employer</summary>
+
 ### Go inside the mind of the employer
 
 
@@ -36,6 +37,7 @@ This will give you insight on longterm opportunities for you. If they're growing
 
 <details>
 <summary>Identify a business problem</summary>
+
 ### Identify a business problem 
 
 Showcase you're interested in solving the root issues in order to prevent further problems.
@@ -67,6 +69,7 @@ When you are in the interview, connect your past experiences to how you can fix 
 
 <details>
 <summary>Explore potential data sources</summary>
+
 ### Explore potential data sources
 
 > See how your solution depends on your unique dataset.
@@ -84,6 +87,7 @@ This should give you further insight into how they operate, and what products an
 
 <details>
 <summary>Discuss machine learning solutions</summary>
+
 ### Discuss machine learning solutions
 
 Get familiar with answering interview questions for this unique field.
@@ -108,6 +112,7 @@ Depending on your interviewer and the stage of your interview, you may be asked 
 
 <details>
 <summary>Practice answering technical questions</summary>
+
 ### Practice answering technical questions
 
 Bolster your confidence for interview day by practicing interview techniques.
@@ -156,8 +161,10 @@ Essential skills of Machine Learning Engineer
 
 <details>
 <summary>What else?</summary>
+
 ### What else?
 Don't forget to ask your interviewers the questions in this exercise, also! Not only do you want to know the answers, asking will showcase your interest and thoughtfulness.
+
 </details>
 
 </details>
