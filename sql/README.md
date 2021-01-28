@@ -1,3 +1,5 @@
+<details>
+    <summary>Query Clause Order</summary>
 ## Query Clause Order
 
 ### Complete `SELECT` query
@@ -85,7 +87,7 @@ query.
 
 
 > Not all query needs to have all parts of the query listed above. 
-
+</details>
 
 
 ## Pattern Matching 
