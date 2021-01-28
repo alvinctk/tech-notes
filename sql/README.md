@@ -264,8 +264,11 @@ WHERE
 ```
 </details>
 
+<details>
+<summary>Theory and Terminology</summary>
 
-
+<details>
+<summary>MapReduce</summary>
 
 ## MapReduce
 
@@ -295,6 +298,10 @@ total = reduce(lambda x, y: x + y, range(1, 11))
 >>> total
 ```
 55
+</details>
+
+<details>
+<summary>View</summary>
 
 ## View
 
@@ -303,14 +310,23 @@ A view is a logical snapshot based on a table or another view. It is used
 - Making complex queries simple
 - Ensuring data independency
 - Providing different views of same data
+</details>
 
+</details>
 
+<details>
+<summary>Advanced SQL</summary>
 
-
+<details>
+<summary>CTE</summary>
 
 ## Common Table Expressions 
 The only way to declare variables in SQL
 
+</details>
+
+<details>
+<summary>Window Function</summary>
 
 ## Window Function
 
@@ -363,7 +379,9 @@ SELECT * FROM CTE WHERE rn <= n
 ```
 
 `ROW_NUMBER` is a function. 
+</details>
 
+</details>
 
 ## References 
 
