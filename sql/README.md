@@ -108,6 +108,74 @@ aggregration.
 </details>
 
 
+<details>
+<summary>JOINS</summary>
+
+## SQL Joins 
+
+![SQL Joins](./sql_joins.jpg)
+
+<details>
+<summary>Types of Joins</summary>
+
+At the top level, there are mainly 3 types of joins:
+
+- `INNER`
+    - fetches data if pressent in both the tables
+
+- `OUTER`
+    - `LEFT OUTER JOIN` fetches data if present in the left table.
+
+    - `RIGHT OUTER JOIN` fetches data if present in the right table.
+
+    - `FULL OUTER JOIN` fetches data if present in the either of the two table.
+
+- `CROSS`
+    - as the name suggets, does `[n X m]` that joins everything to everything. 
+
+    - Similar to scenario where we simply lists the tables for joining (in the
+      `FROM` clauses of the `SELECT` statement), using commas to separate them
+</details>
+
+<details>
+<summary>Equivalent Types of JOINS</summary>
+
+**Points to be noted:**
+
+- If you mention `JOIN`, then by default it is a `INNER JOIN`.
+
+- An `OUTER` join has to be `LEFT` | `RIGHT` | `FULL` you can not simply say `OUTER JOIN`
+
+- You can drop `OUTER` keyword and just say `LEFT JOIN` or `RIGHT JOIN` or
+  `FULL JOIN`. 
+</details>
+ 
+
+<details>
+<summary>Differences between LEFT JOIN and LEFT OUTER JOIN</summary>
+
+> What is the differences between `LEFT JOIN` and `LEFT OUTER JOIN`?
+
+**Nothing**. `LEFT JOIN` and `LEFT OUTER JOIN` are equivalent. 
+</details>
+
+<details>
+<summary>When Venn Diagrams fails to illustrate</summary>
+
+**Points to note on Venn Diagram**
+
+Venn diagrams are helpful to illustrates the differences in output rows if
+tables has no nulls or duplicate rows. 
+
+However, if table contains null and duplicate rows, then a Venn diagram is
+difficult to explain. 
+
+Read [Stackoverflow post on why Venn Diagram isn't help to illustrate nulls.](https://stackoverflow.com/a/38578)
+
+</details>
+
+</details>
+
 ## Pattern Matching 
 Pattern matching uses keyword `LIKE` and (`%` and `_`) wildcard symbols.
 
@@ -229,74 +297,6 @@ A view is a logical snapshot based on a table or another view. It is used
 
 
 
-
-<details>
-<summary>JOINS</summary>
-
-## SQL Joins 
-
-![SQL Joins](./sql_joins.jpg)
-
-<details>
-<summary>Types of Joins</summary>
-
-At the top level, there are mainly 3 types of joins:
-
-- `INNER`
-    - fetches data if pressent in both the tables
-
-- `OUTER`
-    - `LEFT OUTER JOIN` fetches data if present in the left table.
-
-    - `RIGHT OUTER JOIN` fetches data if present in the right table.
-
-    - `FULL OUTER JOIN` fetches data if present in the either of the two table.
-
-- `CROSS`
-    - as the name suggets, does `[n X m]` that joins everything to everything. 
-
-    - Similar to scenario where we simply lists the tables for joining (in the
-      `FROM` clauses of the `SELECT` statement), using commas to separate them
-</details>
-
-<details>
-<summary>Equivalent Types of JOINS</summary>
-
-**Points to be noted:**
-
-- If you mention `JOIN`, then by default it is a `INNER JOIN`.
-
-- An `OUTER` join has to be `LEFT` | `RIGHT` | `FULL` you can not simply say `OUTER JOIN`
-
-- You can drop `OUTER` keyword and just say `LEFT JOIN` or `RIGHT JOIN` or
-  `FULL JOIN`. 
-</details>
- 
-
-<details>
-<summary>Differences between LEFT JOIN and LEFT OUTER JOIN</summary>
-
-> What is the differences between `LEFT JOIN` and `LEFT OUTER JOIN`?
-
-**Nothing**. `LEFT JOIN` and `LEFT OUTER JOIN` are equivalent. 
-</details>
-
-<details>
-<summary>When Venn Diagrams fails to illustrate</summary>
-
-**Points to note on Venn Diagram**
-
-Venn diagrams are helpful to illustrates the differences in output rows if
-tables has no nulls or duplicate rows. 
-
-However, if table contains null and duplicate rows, then a Venn diagram is
-difficult to explain. 
-
-Read [Stackoverflow post on why Venn Diagram isn't help to illustrate nulls.](https://stackoverflow.com/a/38578)
-
-</details>
-
-</details>
 
 ## Common Table Expressions 
 The only way to declare variables in SQL
