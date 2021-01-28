@@ -1,5 +1,5 @@
 <details>
-<summary>Theory and Terminology</summary>
+<summary>Theory</summary>
 
 <details>
 <summary>MapReduce</summary>
