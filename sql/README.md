@@ -441,6 +441,130 @@ SELECT * FROM CTE WHERE rn <= n
 </details>
 
 <details>
+<summary>NULLS, Aggregrate function, and other functions</summary>
+
+<details>
+<summary>Counting NULLS</summary>
+
+According to [SQL Tips counting NULL values](https://sqlbenjamin.wordpress.com/2013/12/27/sql-tip-counting-null-values/),
+
+
+- Find the number of NULL fields in the table
+```sql
+SELECT COUNT(*) - COUNT(<Specific Column Name Here>)
+```
+
+```sql
+SUM(CASE WHEN IS NULL THEN 1 END)
+```
+
+The reason this works because when there is no `ELSE` in the `CASE` statement,
+any row not meeting this constraint/criteria is treated as `NULL`.
+
+Since the `COUNT` (and other aggregration functions) will ignore `NULL` values,
+we use `CASE` to turn `NULL`s into values and values into `NULL`s.
+
+
+
+
+</details>
+
+<details>
+<summary>COUNT with other constraints</summary>
+### COUNT
+> `COUNT` counts the number of non-NULL items. Any NULL items are ignored.
+
+`COUNT(*) ` - Count rows in the table
+
+`COUNT(Major)` - Count the number of (duplicate and unique) Majors in the table
+
+> `COUNT(Major)` may have the same result as `COUNT(*)`, but what it represent differs.
+
+## `COUNT(*)` != `COUNT(Major)`
+
+Suppose `Major` column has duplicate values.
+
+`COUNT(DISTINCT Major)` !=  `COUNT(Major)`
+
+Suppose `Major` column has null values.
+
+`COUNT(*)` != `COUNT(Major)`
+
+### `COUNT` with other constraints
+
+> `COUNT` is an aggregate function. You may replace `COUNT` with other aggregate function to explain yourself what does other aggregate function does with other constraint.
+
+Rows are removed when the constraint in the SQL query clause is not met.
+
+`COUNT(...)` may differ in number when you have constraints in the following SQL query clauses (and also by SQL query clause order from top to bottom):
+- [`LEFT` | `RIGHT` | `FULL`  | `CROSS`]` JOIN`
+- `WHERE`
+- `GROUP BY`
+- `HAVING`
+
+`COUNT(...)` counts the remaining number of rows.
+
+Example 1
+```sql
+SELECT
+    COUNT(Major)
+FROM
+    recent_grads
+WHERE
+   ShareWomen < 0.3
+```
+In example 1, rows with `ShareWomen >= 0.3` are removed. `COUNT(Major)` returns the number of non-NULL Majors where ShareWomen < 0.3.
+
+Example 2
+```sql
+SELECT
+    Major_category,
+    COUNT(Major)
+FROM
+    recent_grads
+GROUP BY
+   Major_category
+```
+
+In example 2, `COUNT(Major)` counts the number of majors in each `Major_category`.
+
+Example 3
+```sql
+SELECT
+   Major_category,
+   COUNT(Major)
+FROM
+   recent_grads
+GROUP BY
+   Major_category
+HAVING
+   Major_category = "Arts"
+   OR Major_category = "Engineering
+```
+
+In example 3, `COUNT(Major)` counts the number of majors in `Arts` or `Engineering`.
+
+### Summary
+
+To count number of rows use `COUNT(*)`.
+
+To count number of `Major` use `COUNT(Major)`.
+
+To count number of items in the `column` use `COUNT(column)`.
+
+> What `COUNT(...)` represents is determined by what rows are removed by these constraints in the SQL query.
+</details>
+
+
+
+</details>
+
+
+
+
+
+
+<details>
 <summary>What is this?</summary>
 
 
