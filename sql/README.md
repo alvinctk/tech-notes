@@ -317,10 +317,6 @@ WHERE
 </details>
 
 
-
-<details>
-<summary>Advanced SQL</summary>
-
 <details>
 <summary>CTE</summary>
 
@@ -385,7 +381,6 @@ SELECT * FROM CTE WHERE rn <= n
 `ROW_NUMBER` is a function. 
 </details>
 
-</details>
 
 ## References 
 
