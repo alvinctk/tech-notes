@@ -1,5 +1,9 @@
 <details>
-    <summary>Query Clause Order</summary>
+ <summary>Query</summary>
+
+
+<details>
+<summary>Query Clause Order</summary>
 
 ## Query Clause Order
 
@@ -85,11 +89,22 @@ reference aliases in this clause.
 Finally the rows that fall outside the range specified by the `LIMIT` and
 `OFFSET` are discarded, leaving the final set of rows to be returned from the
 query.
-
+</details>
 
 > Not all query needs to have all parts of the query listed above. 
 </details>
 
+<details>
+<summary>Differences between WHERE and HAVING BY</summary>
+
+### Differences between `WHERE` and `HAVING BY`
+
+`HAVING` block illustrates the filtering of result based on grouping and
+aggregration. 
+
+`WHERE` block illustrates the filtering of result **before** grouping and
+aggregration. 
+</details>
 
 ## Pattern Matching 
 Pattern matching uses keyword `LIKE` and (`%` and `_`) wildcard symbols.
@@ -212,14 +227,6 @@ A view is a logical snapshot based on a table or another view. It is used
 
 
 
-
-## `WHERE` and `HAVING BY`
-
-`HAVING` block illustrates the filtering of result based on grouping and
-aggregration. 
-
-`WHERE` block illustrates the filtering of result **before** grouping and
-aggregration. 
 
 
 ## SQL Joins 
