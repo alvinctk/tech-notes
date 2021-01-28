@@ -48,6 +48,7 @@ Showcase you're interested in solving the root issues in order to prevent furthe
 
 
 > Which business problem are they trying to solve? 
+
 Identify a Business Problem
 
 Imagine yourself in the role – find out as much as possible about the company and position. Then ask yourself: What is one core problem I need to solve? 
