@@ -89,9 +89,11 @@ reference aliases in this clause.
 Finally the rows that fall outside the range specified by the `LIMIT` and
 `OFFSET` are discarded, leaving the final set of rows to be returned from the
 query.
-</details>
 
 > Not all query needs to have all parts of the query listed above. 
+
+</details>
+
 <details>
 <summary>Differences between WHERE and HAVING BY</summary>
 
@@ -103,6 +105,28 @@ aggregration.
 `WHERE` block illustrates the filtering of result **before** grouping and
 aggregration. 
 </details>
+
+<details>
+<summary>Nested Queries in WHERE Clause</summary>
+
+## Nested Queries
+
+Nesting is necessary in the `WHERE` clause because the interpreter is unable to
+look outside to figure out any aggregration function. 
+
+Example, 
+
+```sql
+SELECT
+    first_name,
+    last_name
+FROM 
+    executions
+WHERE
+    LENGTH(last_statement) = (SELECT MAX(LENGTH(last_statement) FROM executions)
+```
+</details>
+
 
 
 </details>
@@ -239,23 +263,6 @@ WHERE
 
 
 
-
-## Nested Queries
-
-Nesting is necessary in the `WHERE` clause because the interpreter is unable to
-look outside to figure out any aggregration function. 
-
-Example, 
-
-```sql
-SELECT
-    first_name,
-    last_name
-FROM 
-    executions
-WHERE
-    LENGTH(last_statement) = (SELECT MAX(LENGTH(last_statement) FROM executions)
-```
 
 ## MapReduce
 
