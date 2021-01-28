@@ -242,7 +242,8 @@ At the top level, there are mainly 3 types of joins:
       `FROM` clauses of the `SELECT` statement), using commas to separate them
 
 
-**Points to be noted: **
+**Points to be noted:**
+
 - If you mention `JOIN`, then by default it is a `INNER JOIN`.
 
 - An `OUTER` join has to be `LEFT` | `RIGHT` | `FULL` you can not simply say `OUTER JOIN`
