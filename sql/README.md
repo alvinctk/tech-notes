@@ -92,12 +92,10 @@ query.
 </details>
 
 > Not all query needs to have all parts of the query listed above. 
-</details>
-
 <details>
 <summary>Differences between WHERE and HAVING BY</summary>
 
-### Differences between `WHERE` and `HAVING BY`
+## Differences between `WHERE` and `HAVING BY`
 
 `HAVING` block illustrates the filtering of result based on grouping and
 aggregration. 
@@ -105,6 +103,10 @@ aggregration.
 `WHERE` block illustrates the filtering of result **before** grouping and
 aggregration. 
 </details>
+
+
+</details>
+
 
 ## Pattern Matching 
 Pattern matching uses keyword `LIKE` and (`%` and `_`) wildcard symbols.
