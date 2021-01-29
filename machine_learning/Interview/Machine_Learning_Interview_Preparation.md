@@ -1,4 +1,6 @@
-# Notes from Udacity Free Course on Machine Learning Interview Preparation
+# Machine Learning Interview Preparation
+
+> Notes from [Udacity](https://classroom.udacity.com/courses/ud1001) Free Course on Machine Learning Interview Preparation
 
 <details>
 <summary>Lesson 1: Mindset to Machine Learning Interview</summary>
