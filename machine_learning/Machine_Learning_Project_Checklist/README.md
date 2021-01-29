@@ -15,4 +15,6 @@
 6. [Fine-tune your models and combine them into a great
    solution](./Fine_tune_the_models.md).
 
-7. [Present your solution](./Present_your_solution.md). 
+7. [Present your solution](./Present_your_solution.md).
+
+8. [Launch](./Launch.md)
