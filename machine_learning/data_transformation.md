@@ -1,8 +1,6 @@
 # Preparing Data For Machine Learning 
 
-**Keywords**: discretization, continuous feature, data minining, classification 
-
-
+**Keywords**: discretization, normalization, continuous feature, data minining, classification 
 
 Machine Learning algorithms make assumptions to the data. 
 
@@ -18,11 +16,7 @@ In order to prepare the data based on the assumptions
 4. Summarize the data to show change. 
 
 
-
-
-## Data Transformation Methods 
-
-### Data Smoothing
+## Data Smoothing
 
 The method is used to remove nosie from a dataset. 
 
@@ -31,10 +25,10 @@ Noise defines as the distorted and meaningless data within the dataset.
 Smoothing uses algorithms to highlight the special features in the data. 
 
 After removing noise, Machine Learning algorithms can detect any small changes to the data to
-detect spcial patterns. 
+detect special patterns. 
 
 
-### Data Aggregation 
+## Data Aggregation 
 
 Aggregation is the process of collecting data from a variety of sources and storing it in a single format.
 
@@ -204,7 +198,7 @@ Data generalization can be divided into two approaches – data cube process (OL
 Attribute construction create new attributes from an existing set of
 attributes. 
 
-## Rescale Data - Normalization 
+## Normalization - Rescale Data
 
 Normalization refers to rescaling each observation (row) to have a length of 1
 (called a unit norm or vector with the length of 1 in Linear Algebra.)
@@ -225,7 +219,7 @@ Popular normalization methods are
 - Decimal scaling
 - Z-score normalization.
 
-## Standardize Data
+### Standardize Data
 
 Standardization is a useful technique to transform attributes with a Gaussian
 distribution and differing means and standard deviations to a standard Gaussian
@@ -261,11 +255,9 @@ print(rescaledX[0:5,:])
 [ 1.234 1.944 -0.264 -1.288 -0.693 -1.103 0.604 -0.106]
 [-0.845 -0.998 -0.161 0.155 0.123 -0.494 -0.921 -1.042]
 [-1.142 0.504 -1.505 0.907 0.766 1.41 5.485 -0.02 ]]
-```:w
+```
 
-
-
-## Binarize Data (Make Binary)
+### Binarize Data (Make Binary)
 
 Transforms data using a binary threshold. 
 
