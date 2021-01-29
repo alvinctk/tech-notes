@@ -174,15 +174,13 @@ Simple Discretization
 - Equal Width
 - Equal Frequency Width (or a form of binning)
 
-
+### Discretization References 
 [Discretization: An Enabling Technique](https://sci2s.ugr.es/keel/pdf/algorithm/articulo/liu1-2.pdf)
 [Supervised and Unsupervised Discretization of Continuous Features](http://robotics.stanford.edu/users/sahami/papers-dir/disc.ps)
 |              	|                                                                                Global                                                                                	|                                            Local                                           	|
 |:------------:	|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|:------------------------------------------------------------------------------------------:	|
 |  Supervised  	| 1RD (Holt) </br> Adaptive Quantizers </br> ChiMerge (Kerber) </br> D-2 (Catlett) </br> Fayyad and Irani / Ting </br> Supervised MCC </br> Predictive Value Max </br> 	| Vector Quantization </br> Hierarchical Maximum Entropy </br> Fayyad Irani </br> C4.5 </br> 	|
 | Unsupervised 	|                                            Equal width interval </br> Equal frequency interval </br> Unsupervised MCC                                                    	|                                     K-Means Clustering                                     	|
-
-
 
 
 
