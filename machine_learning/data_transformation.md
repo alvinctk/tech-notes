@@ -45,9 +45,51 @@ If a continuous attribute is handled by a data mining task, then its discrete va
 
 This method is also called data reduction mechanism as it transforms a large dataset into a set of categorical data. Discretization also uses decision tree-based algorithms to produce short, compact and accurate results when using discrete values.
 
+Supervised discretization considers class information; while unsupervised discretization does not considers class information. 
 
-Supervised discretization considers class information; while unsupervised
-discretization does not considers class information. 
+Discretization can be broken into the following groups
+- Local vs Global
+    - A local method would discretize in a localized region of instance space
+      (i.e. a subset of instances) 
+    - A global discretization method uses the entire instance space to
+      discretize. 
+- Top-down or Bottom-up 
+    - Top-down methods start with an empty list of cut-points (or split-points)
+      and keep on adding new ones to the list by "splitting" intervals as the
+      discretization progresses. 
+
+   - Bottom-up methods start with a complete list of all the continuous values
+     of the features as cut-points and remove some of them by "merging"
+     intervals as the discretization progresses. 
+
+### Discretization Process
+1. Sorting
+
+The continuous values for a feature is sorted in either descending or ascending
+order. Efficient sorting algorithms can speed up the discretization process.
+Quick-sort is an efficient sorting algorithm with a time complexity of O(N log
+N). 
+
+Another way to improve efficiency is to avoid sorting features value
+repeatedly. 
+
+If sorting is done once and for all at the beginning of
+discretization, it is a **global** treatment and can be applied when the entire
+instance space is used for discretization. 
+
+If sorting is done at each iteration of a process, it is a **local** treatment
+in which only a region of entire instance space is considered for
+discretization.
+
+
+
+2. Choosing a cut point
+
+3. Splitting/merging 
+
+4. Stopping criteria
+
+
 
 ### Binning
 
@@ -175,7 +217,7 @@ Simple Discretization
 - Equal Frequency Width (or a form of binning)
 
 ### Discretization References 
-[Discretization: An Enabling Technique](https://sci2s.ugr.es/keel/pdf/algorithm/articulo/liu1-2.pdf)
+[Discretization: An Enabling Technique](https://sci2s.ugr.es/keel/pdf/algorithm/articulo/liu1-2.pdf) </br>
 [Supervised and Unsupervised Discretization of Continuous Features](http://robotics.stanford.edu/users/sahami/papers-dir/disc.ps)
 |              	|                                                                                Global                                                                                	|                                            Local                                           	|
 |:------------:	|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|:------------------------------------------------------------------------------------------:	|
