@@ -1,5 +1,7 @@
 # Machine Learning Project Checklist
 
+> Machine Learning Project Checklist From: Aurélien Géron. “Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow”. 
+
 1. [Frame the problem and look at the big picture.](./Frame_the_problem.md)
 
 2. [Get the data.](./Get_the_data.md) 
