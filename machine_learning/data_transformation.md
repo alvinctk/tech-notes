@@ -186,7 +186,7 @@ Simple Discretization
 |              	|                                                                                Global                                                                                	|                                            Local                                           	|
 |:------------:	|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|:------------------------------------------------------------------------------------------:	|
 |  Supervised  	| 1RD (Holt) </br> Adaptive Quantizers </br> ChiMerge (Kerber) </br> D-2 (Catlett) </br> Fayyad and Irani / Ting </br> Supervised MCC </br> Predictive Value Max </br> 	| Vector Quantization </br> Hierarchical Maximum Entropy </br> Fayyad Irani </br> C4.5 </br> 	|
-| Unsupervised 	|                                                    Equal width interval Equal frequency interval Unsupervised MCC                                                    	|                                     K-Means Clustering                                     	|
+| Unsupervised 	|                                            Equal width interval </br> Equal frequency interval </br> Unsupervised MCC                                                    	|                                     K-Means Clustering                                     	|
 
 ## Generalization 
 
