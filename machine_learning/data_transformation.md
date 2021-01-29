@@ -188,6 +188,11 @@ Simple Discretization
 |  Supervised  	| 1RD (Holt) </br> Adaptive Quantizers </br> ChiMerge (Kerber) </br> D-2 (Catlett) </br> Fayyad and Irani / Ting </br> Supervised MCC </br> Predictive Value Max </br> 	| Vector Quantization </br> Hierarchical Maximum Entropy </br> Fayyad Irani </br> C4.5 </br> 	|
 | Unsupervised 	|                                            Equal width interval </br> Equal frequency interval </br> Unsupervised MCC                                                    	|                                     K-Means Clustering                                     	|
 
+
+
+
+
+
 ## Generalization 
 
 In this process, low-level data attributes are transformed into high-level data attributes using concept hierarchies. This conversion from a lower level to a higher conceptual level is useful to get a clearer picture of the data. For example, age data can be in the form of (20, 30) in a dataset. It is transformed into a higher conceptual level into a categorical value (young, old).
@@ -230,6 +235,36 @@ Assuming a Gaussian distribution in the input variables, these algorithms are
 suitable for Standardization such as Linear Regression, Logistic Regression,
 and Linear Discriminate Analysis. 
 
+```python
+# Standardize data (0 mean, 1 stdev)
+
+from sklearn.preprocessing import StandardScaler
+from pandas import read_csv
+from numpy import set_printoptions
+filename = 'pima-indians-diabetes.data.csv'
+names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class'] dataframe = read_csv(filename, names=names)
+array = dataframe.values
+
+# separate array into input and output components
+X = array[:,0:8]
+Y = array[:,8]
+scaler = StandardScaler().fit(X)
+rescaledX = scaler.transform(X)
+
+# summarize transformed data
+set_printoptions(precision=3)
+print(rescaledX[0:5,:])
+```
+```text
+[[ 0.64 0.848 0.15 0.907 -0.693 0.204 0.468 1.426]
+[-0.845 -1.123 -0.161 0.531 -0.693 -0.684 -0.365 -0.191]
+[ 1.234 1.944 -0.264 -1.288 -0.693 -1.103 0.604 -0.106]
+[-0.845 -0.998 -0.161 0.155 0.123 -0.494 -0.921 -1.042]
+[-1.142 0.504 -1.505 0.907 0.766 1.41 5.485 -0.02 ]]
+```:w
+
+
+
 ## Binarize Data (Make Binary)
 
 Transforms data using a binary threshold. 
@@ -243,7 +278,37 @@ Binarizing data is useful when
 - during feature engineering, when adding a new feature that indicate something
   meaningful. 
 
+```python
+from sklearn.preprocessing import Binarizer
+from pandas import read_csv 
+from numpy import set_printoptions
 
+names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
+
+dataframe = read_csv(filename, names=names)
+
+array = dataframe.values
+
+# separate array into input and output components
+X = array[:,0:8]
+Y = array[:,8]
+
+binarizer = Binarizer(threshold=0.0).fit(X)
+binaryX = binarizer.transform(X)
+
+# summarize transformed data
+set_printoptions(precision=3)
+print(binaryX[0:5,:])
+
+```
+You can see that all values equal or less than 0 are marked 0 and all of those above 0 are marked 1.
+```text
+[[1.1. 1. 1. 0. 1. 1. 1.] 
+[ 1. 1. 1. 1. 0. 1. 1. 1.] 
+[ 1. 1. 1. 0. 0. 1. 1. 1.] 
+[ 1. 1. 1. 1. 1. 1. 1. 1.] 
+[ 0. 1. 1. 1. 1. 1. 1. 1.]]
+```
 
 
 
